@@ -127,8 +127,8 @@ body {
 }
 
 .text-container form input[type="email"]:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem white, 0 0 0.1rem 0.3rem var(--desaturated-red);
-          box-shadow: 0 0 0 0.2rem white, 0 0 0.1rem 0.3rem var(--desaturated-red);
+  -webkit-box-shadow: 0 0 0 0.2rem white, 0 0 0 0.3rem var(--desaturated-red);
+          box-shadow: 0 0 0 0.2rem white, 0 0 0 0.3rem var(--desaturated-red);
 }
 
 .text-container form .error-icon {

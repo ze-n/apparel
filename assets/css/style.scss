@@ -87,7 +87,7 @@ body {
             }
             outline:none;
             &:focus {
-                box-shadow: 0 0 0 .2rem white, 0 0 .1rem .3rem var(--desaturated-red);
+                box-shadow: 0 0 0 .2rem white, 0 0 0 .3rem var(--desaturated-red);
             }
         }
         .error-icon {
