@@ -127,8 +127,8 @@ body {
 }
 
 .text-container form input[type="email"]:focus {
-  outline: 2px solid var(--desaturated-red);
-  outline-offset: .2rem;
+  -webkit-box-shadow: 0 0 0 0.2rem white, 0 0 0.1rem 0.3rem var(--desaturated-red);
+          box-shadow: 0 0 0 0.2rem white, 0 0 0.1rem 0.3rem var(--desaturated-red);
 }
 
 .text-container form .error-icon {
@@ -150,6 +150,10 @@ body {
   border: none;
   cursor: pointer;
   z-index: 3;
+}
+
+.text-container form button:focus {
+  outline: none;
 }
 
 .text-container form button::before, .text-container form button::after {
@@ -181,10 +185,12 @@ body {
 
 .text-container form button:hover::before, .text-container form button:focus::before {
   opacity: 0;
+  outline: none;
 }
 
 .text-container form button:hover::after, .text-container form button:focus::after {
   opacity: 1;
+  outline: none;
 }
 
 .text-container form .error-msg {

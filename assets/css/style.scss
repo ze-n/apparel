@@ -87,8 +87,7 @@ body {
             }
             outline:none;
             &:focus {
-                outline: 2px solid var(--desaturated-red);
-                outline-offset: .2rem;
+                box-shadow: 0 0 0 .2rem white, 0 0 .1rem .3rem var(--desaturated-red);
             }
         }
         .error-icon {
@@ -108,6 +107,9 @@ body {
             border: none;
             cursor: pointer;
             z-index: 3;
+            &:focus {
+                outline: none;
+            }
             &::before,
             &::after {
                 content: '';
@@ -133,10 +135,12 @@ body {
             &:hover::before,
             &:focus::before {
                 opacity: 0;
+                outline: none;
             }
             &:hover::after,
             &:focus::after {
                 opacity: 1;
+                outline: none;
             }
         }
         .error-msg {
