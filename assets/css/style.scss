@@ -147,7 +147,6 @@ body {
             font-size: 14px;
             display: block;
             margin-top: .5rem;
-            padding-left: 1.5rem;
             color: var(--soft-red);
             display: none;
         }
@@ -241,6 +240,11 @@ footer {
                 object-fit: cover;
                 object-position: top center;
             }
+        }
+    }
+    form {
+        .error-msg {
+            padding-left: 1.5rem;
         }
     }
     footer {
